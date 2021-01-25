@@ -7,10 +7,10 @@ This script is still work on progress, more coming soon.
  
 ## Usage
 
-To run the script can use bash/sh \<script name\>
+To run the script can use bash/sh \<script name\> inside the terminal in cPanel
 
 
 ## ChangeLogs
-- First commit
-- Laravel deploy (laravel.sh)
-- Composer install (pre.sh)
+- * First commit
+- * Laravel deploy (laravel.sh)
+- * Composer install (pre.sh)
