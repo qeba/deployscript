@@ -28,7 +28,7 @@ function cmpsrInstall() {
    cd ../laravelData
    php composer.phar install
    cd .. #get back to where you come from bro!!
-   echo -e "\e[1;32mIf you see this it's means it's done!...\e[0m"
+   echo -e "\e[1;32mIf you see this it's means you're half way...\e[0m"
 }
 
 function LaravelClear() {
@@ -154,6 +154,26 @@ echo "Next magic coming...... Please wait..."
 echo "........................"
 LaravelClear
 echo "............................................"
+printf  "\n"
+#fix storage link later!!
+sleep 2
+echo "Time to fix the storage folder."
+echo "........"
+sleep 2
+rm -rf ./public_html/storage
+sleep 1
+echo "............."
+
+pubLoc=`cd ./public_html && pwd`
+LrvDataLoc=`cd ./laravelData && pwd`
+echo "Your pubcli_html is located; $pubLoc"
+echo "Your laravel data is locoated; $LrvDataLoc"
+sleep 1
+echo "................"
+ln -s $LrvDataLoc/storage/app/public/ $pubLoc/storage
+echo "........................"
+sleep 1
+echo "...................................................."
 printf  "\n"
 
 # #complete
