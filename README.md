@@ -11,6 +11,7 @@ To run the script can use bash/sh \<script name\> inside the terminal in cPanel
 
 
 ## ChangeLogs
-- * First commit
-- * Laravel deploy (laravel.sh)
-- * Composer install (pre.sh)
+-  First commit
+-  Laravel deploy (laravel.sh)
+-  Composer install (pre.sh)
+-  Added ln to link storage location inside public_html
